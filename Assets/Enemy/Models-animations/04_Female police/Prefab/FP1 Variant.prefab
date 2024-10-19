@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &571136665778442655
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.0866868
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.0866868
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.0866868
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 424.02213
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 52.25
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 488.21375
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7823293702887809713, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c9775b1de6f93946aa0b9ac218a529b, type: 2}
+    - target: {fileID: -6138923895777843317, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c9775b1de6f93946aa0b9ac218a529b, type: 2}
+    - target: {fileID: 919132149155446097, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_Name
+      value: FP1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630794972795428178, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c9775b1de6f93946aa0b9ac218a529b, type: 2}
+    - target: {fileID: 4058854842844121882, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c9775b1de6f93946aa0b9ac218a529b, type: 2}
+    - target: {fileID: 4123177642777943866, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c9775b1de6f93946aa0b9ac218a529b, type: 2}
+    - target: {fileID: 5128063986421979777, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c9775b1de6f93946aa0b9ac218a529b, type: 2}
+    - target: {fileID: 8574611706167915169, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c9775b1de6f93946aa0b9ac218a529b, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+--- !u!1 &805154860442971342 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e82a90ba3f4a3b14d9f52c5499f84470, type: 3}
+  m_PrefabInstance: {fileID: 571136665778442655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &473383180
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805154860442971342}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 71efeb564ef0c0144b024dee5969e1cd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &473383181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805154860442971342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e13eb372f158131478ee3ed69ca1ac55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 1
