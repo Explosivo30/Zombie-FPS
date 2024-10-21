@@ -58,6 +58,7 @@ public abstract class EnemyBaseState : State
 
         float playerDistanceSqr =  (stateMachine.transform.position - stateMachine.Player.transform.position).sqrMagnitude;
 
+        Debug.Log(playerDistanceSqr);
         return playerDistanceSqr <= stateMachine.PlayerChasingRange * stateMachine.PlayerChasingRange;
         
     }

@@ -19,7 +19,6 @@ public class EnemyChasingState : EnemyBaseState
     public override void Enter()
     {
         stateMachine.Animator.CrossFadeInFixedTime(LocomotionHash, CrossFadeDuration);
-        CombatManager.Instance.AddEnemy(stateMachine.gameObject);
     }
 
     public override void Tick(float deltaTime)

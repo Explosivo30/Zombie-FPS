@@ -19,8 +19,9 @@ namespace Knife.RealBlood
         [SerializeField] private GameObject bloodHitPrefab;
         [SerializeField] private GameObject bloodHitPrefab2;
         [SerializeField] private CharacterDamagePainter painter;
+        private readonly int HitHash = Animator.StringToHash("Hit");
 
-        private Animator animator;
+        [SerializeField] private Animator animator;
 
         private bool isHitted = false;
         private Action onHittedEvent;
@@ -60,7 +61,17 @@ namespace Knife.RealBlood
         public void TakeDamage(DamageData[] damage, HitBox hitbox)
         {
             int randomHit = Random.Range(minHitIndex, maxHitIndex);
-            animator.CrossFadeInFixedTime("Hit" + randomHit, 0.1f, 0, 0);
+            if(transform.CompareTag("Zombie"))
+            {
+                animator.CrossFadeInFixedTime(HitHash, 0.1f);
+            }
+            else
+            {
+                animator.CrossFadeInFixedTime("Hit" + randomHit, 0.1f, 0, 0);
+            }
+            
+            
+
 
             Vector3 averagePoint = Vector3.zero;
             Vector3 averageNormal = Vector3.zero;
@@ -95,7 +106,7 @@ namespace Knife.RealBlood
 
         private void Start()
         {
-            animator = GetComponent<Animator>();
+            //animator = GetComponent<Animator>();
 
             foreach (var h in hitboxes)
             {

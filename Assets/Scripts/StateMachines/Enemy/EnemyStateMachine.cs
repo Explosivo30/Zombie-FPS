@@ -38,7 +38,7 @@ public class EnemyStateMachine : StateMachine
 
     private void Awake()
     {
-        races = SpawnerManager.Instance.InitEnemy();
+        //races = SpawnerManager.Instance.InitEnemy();
     }
 
     private void Start()
