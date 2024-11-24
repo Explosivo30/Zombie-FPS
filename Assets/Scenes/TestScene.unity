@@ -5423,7 +5423,7 @@ MonoBehaviour:
   <DodgeLength>k__BackingField: 0.25
   <MovementSpeed>k__BackingField: 0.09
   <PlayerChasingRange>k__BackingField: 7.03
-  <AttackRange>k__BackingField: 0.24
+  <AttackRange>k__BackingField: 2.15
   <AttackKnockback>k__BackingField: 0.12
   <AttackDamage>k__BackingField: 2
   races: {fileID: 0}

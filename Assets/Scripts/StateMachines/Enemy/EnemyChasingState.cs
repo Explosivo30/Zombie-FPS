@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyChasingState : EnemyBaseState
 {
@@ -23,6 +24,8 @@ public class EnemyChasingState : EnemyBaseState
 
     public override void Tick(float deltaTime)
     {
+        Debug.Log("Chase");
+        
         if (!IsInChaseRange())
         {
             stateMachine.SwitchState(new EnemyIdleState(stateMachine));
@@ -33,10 +36,8 @@ public class EnemyChasingState : EnemyBaseState
             return;
         }
 
+        
         MoveToPlayer(deltaTime);
-
-        FacePlayer();
-
         stateMachine.Animator.SetFloat(SpeedHash, 1f, AnimatorDampTime, deltaTime);
     }
 
@@ -46,7 +47,7 @@ public class EnemyChasingState : EnemyBaseState
     {
         stateMachine.Agent.ResetPath();
         stateMachine.Agent.velocity = Vector3.zero;
-        CombatManager.Instance.RemoveEnemy(stateMachine.gameObject);
+        
     }
 
 
@@ -54,24 +55,13 @@ public class EnemyChasingState : EnemyBaseState
     {
         if (stateMachine.Agent.isOnNavMesh)
         {
+
+            //stateMachine.Agent.updatePosition = true;
+            //stateMachine.Agent.updateRotation = true;
             stateMachine.Agent.SetDestination(stateMachine.Player.transform.position);
-
-            Move(stateMachine.Agent.desiredVelocity.normalized * stateMachine.MovementSpeed, deltaTime);
         }
-
-        stateMachine.Agent.velocity = stateMachine.Controller.velocity;
     }
 
-
-    private bool IsInAttackRange()
-    {
-        if (stateMachine.Player.IsDead) { return false; }
-
-        float playerDistanceSqr = (stateMachine.Player.transform.position - stateMachine.transform.position).sqrMagnitude;
-
-        return playerDistanceSqr <= stateMachine.AttackRange * stateMachine.AttackRange;
-
-    }
 
 
 }

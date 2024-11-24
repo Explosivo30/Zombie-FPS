@@ -45,8 +45,9 @@ public class EnemyStateMachine : StateMachine
     {
         Player = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
 
-        Agent.updatePosition = false;
-        Agent.updateRotation = false;
+        Agent.updatePosition = true;
+        Agent.updateRotation = true;
+        
 
         SwitchState(new EnemyIdleState(this));
     }

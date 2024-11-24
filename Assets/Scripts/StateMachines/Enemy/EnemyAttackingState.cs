@@ -12,12 +12,10 @@ public class EnemyAttackingState : EnemyBaseState
 
     public override void Enter()
     {
-        FacePlayer();
-
-        stateMachine.Weapon.SetAttack(stateMachine.AttackDamage, stateMachine.AttackKnockback);
+        FacePlayer(); 
 
         stateMachine.Animator.CrossFadeInFixedTime(AttackHash, TransitionDuration);
-        CombatManager.Instance.AddEnemy(stateMachine.gameObject);
+        
     }
 
     public override void Tick(float deltaTime)
@@ -30,7 +28,7 @@ public class EnemyAttackingState : EnemyBaseState
 
     public override void Exit()
     {
-        CombatManager.Instance.RemoveEnemy(stateMachine.gameObject);
+        
     }
 
 }
