@@ -106,19 +106,19 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AmbientOcclusionAmount: 0.116
+    - _AmbientOcclusionAmount: 0.061
     - _BlendEnd: 0
     - _BlendStart: 0
     - _BumpScale: 1
     - _Cutoff: 0.05
-    - _DamageAmbientOcclusionAmount: 1
-    - _DamageBorderLength: 0.801
-    - _DamageBorderPower: 0.04
+    - _DamageAmbientOcclusionAmount: 0.717
+    - _DamageBorderLength: 0.669
+    - _DamageBorderPower: 0.34
     - _DamageDisplacement: 0.015
-    - _DamageMaskPower: 1.45
+    - _DamageMaskPower: 1.51
     - _DamageNormalBlendPower: 10
     - _DamageNormalScale: 1
-    - _DamageSmoothness: 0.266
+    - _DamageSmoothness: 0.555
     - _DamageSpecBlendPower: 10.7
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -140,7 +140,7 @@ Material:
     - _SrcBlend: 1
     - _TessMax: 25
     - _TessMin: 10
-    - _TessValue: 8.1
+    - _TessValue: 3.1
     - _UVSec: 0
     - _ZWrite: 1
     - __dirty: 1

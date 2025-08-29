@@ -33,7 +33,6 @@ RectTransform:
   m_Children:
   - {fileID: 1558720176274346896}
   m_Father: {fileID: 3888431239028477377}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -57,7 +56,9 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -126,6 +127,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4520957826639812475}
+  serializedVersion: 2
   m_LocalRotation: {x: -0.006075875, y: -0.70964557, z: 0.0039522536, w: 0.7045216}
   m_LocalPosition: {x: 710.2171, y: 67, z: 453.3988}
   m_LocalScale: {x: 0.0016339074, y: 0.0016339074, z: 0.0016339074}
@@ -135,7 +137,6 @@ Transform:
   - {fileID: 2348230227659034828}
   - {fileID: 2177019854566378672}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -0.169, y: -90.416, z: 0.813}
 --- !u!65 &6000230961095049960
 BoxCollider:
@@ -145,9 +146,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4520957826639812475}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 2000, y: 2651.77, z: 2465}
   m_Center: {x: 0.31, y: 1165.6, z: 498}
 --- !u!114 &1851236213926973853
@@ -164,6 +173,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PressButtonUI: {fileID: 890740038405720135}
   Cajero: {fileID: 4520957826639812475}
+  randomMonenyMin: 100
+  randomMonenyMax: 200
+  receivemoney: 0
   TimeToHack: 10
   TimerOn: 0
   TimerTxt: {fileID: 6094786368759343044}
@@ -198,7 +210,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2348230227659034828}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -333,7 +344,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2177019854566378672}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -470,7 +480,6 @@ RectTransform:
   m_Children:
   - {fileID: 1111175159520996276}
   m_Father: {fileID: 3888431239028477377}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 15.175, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -494,7 +503,9 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -564,13 +575,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8331506247346343378}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3888431239028477377}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8554312851920362613
 MeshFilter:
@@ -630,8 +641,16 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8331506247346343378}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 881.451, y: 2218.5796, z: 1137.8612}
   m_Center: {x: 0.000091552756, y: 1116.0784, z: -178.90564}

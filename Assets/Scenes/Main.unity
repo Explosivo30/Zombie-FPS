@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.35291225, g: 0.3601924, b: 0.4047004, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1114,7 +1114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 552814586}
   - component: {fileID: 552814585}
-  - component: {fileID: 552814584}
+  - component: {fileID: 552814587}
   m_Layer: 8
   m_Name: Post-process Volume
   m_TagString: Untagged
@@ -1122,23 +1122,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &552814584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 552814583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: ede9a45fb1578ae489ddb53d099157de, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 0
 --- !u!65 &552814585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1175,6 +1158,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 64483602}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &552814587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552814583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 7c11cd86a6cc2804288ed8b376b27b73, type: 2}
 --- !u!1 &622885680
 GameObject:
   m_ObjectHideFlags: 0
@@ -2868,7 +2868,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5429,6 +5429,7 @@ MonoBehaviour:
     type: 3}
   bloodHitPrefab2: {fileID: 0}
   painter: {fileID: 1063322679425146715}
+  animator: {fileID: 0}
 --- !u!64 &1063322679425146711
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5590,6 +5591,7 @@ MonoBehaviour:
     type: 3}
   bloodHitPrefab2: {fileID: 0}
   painter: {fileID: 1063322679425146716}
+  animator: {fileID: 0}
 --- !u!114 &1063322679425146719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5676,6 +5678,7 @@ MonoBehaviour:
     type: 3}
   bloodHitPrefab2: {fileID: 0}
   painter: {fileID: 1063322679425146721}
+  animator: {fileID: 0}
 --- !u!65 &1184064026415270476
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6510,6 +6513,7 @@ MonoBehaviour:
   bloodHitPrefab2: {fileID: 5620940360518247921, guid: c464fbd1cfa05124abb9edf742d476ca,
     type: 3}
   painter: {fileID: 9006781565471480061}
+  animator: {fileID: 0}
 --- !u!114 &9006781565471480061
 MonoBehaviour:
   m_ObjectHideFlags: 0
